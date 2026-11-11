@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Online Retail II - cleaned, validated and AI-ready (UK gift shop sales 2009-2011)",
+  "alternateName": "online-retail-ii-trusted",
+  "description": "Cleaned and validated version of the UCI Online Retail II sales data, produced by a Tableau Prep flow with Python Script steps. One row per unique sales line (fact_sales), separate tables for quarantined lines (with reason), cancellations and non-product lines (postage, fees), a product dimension with one description per product, monthly revenue per country, and AI-ready customer features (RFM scores and segments). Every row keeps its source sheet and the number of raw lines it represents (copies).",
+  "identifier": "TO CONFIRM: DOI assigned by Zenodo after the group publishes the dataset",
+  "version": "1.0.0",
+  "dateCreated": "2026-11-05",
+  "keywords": ["e-commerce", "online retail", "sales transactions", "customer segmentation", "RFM", "data quality", "FAIR", "Tableau Prep", "United Kingdom", "gift shop"],
+  "creator": {"@type": "Organization", "name": "Data Management group, SRH University of Applied Sciences Heidelberg - member names TO CONFIRM"},
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isBasedOn": [
+    {"@type": "Dataset", "name": "Online Retail II", "identifier": "https://doi.org/10.24432/C5CG6D",
+     "creator": {"@type": "Person", "name": "Daqing Chen"}, "license": "https://creativecommons.org/licenses/by/4.0/"},
+    {"@type": "Dataset", "name": "GeoNames countryInfo", "url": "https://download.geonames.org/export/dump/countryInfo.txt",
+     "license": "https://creativecommons.org/licenses/by/4.0/"}
+  ],
+  "creditText": "Contains data from Online Retail II (Chen, 2012, UCI Machine Learning Repository, CC BY 4.0) and GeoNames (geonames.org, CC BY 4.0). Changed: de-duplicated, validated, split by quality status, enriched with country codes.",
+  "temporalCoverage": "2009-12-01/2011-12-09",
+  "spatialCoverage": {"@type": "Place", "name": "United Kingdom (seller); customers in 42 countries"},
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "measurementTechnique": "Sales export of the retailer (UCI); processed with Tableau Prep Builder 2026.2 and Python 3.12 Script steps (TabPy); see prep/online_retail_flow.tfl",
+  "distribution": [
+    {"@type": "DataDownload", "name": "fact_sales.csv", "encodingFormat": "text/csv", "description": "1,003,214 trusted sales lines, 26 columns, UTF-8, ISO 8601 dates"},
+    {"@type": "DataDownload", "name": "quarantine_lines.csv", "encodingFormat": "text/csv", "description": "6,021 lines that broke a rule, with dq_reason"},
+    {"@type": "DataDownload", "name": "cancellations.csv", "encodingFormat": "text/csv"},
+    {"@type": "DataDownload", "name": "non_product_lines.csv", "encodingFormat": "text/csv"},
+    {"@type": "DataDownload", "name": "dim_product.csv", "encodingFormat": "text/csv"},
+    {"@type": "DataDownload", "name": "monthly_revenue.csv", "encodingFormat": "text/csv"},
+    {"@type": "DataDownload", "name": "customer_features.csv", "encodingFormat": "text/csv", "description": "5,852 customers with RFM features (AI-ready)"},
+    {"@type": "DataDownload", "name": "fact_sales.hyper", "encodingFormat": "application/vnd.tableau.hyper", "description": "warehouse table for Tableau"}
+  ],
+  "variableMeasured": [
+    {"@type": "PropertyValue", "name": "unit_price_gbp", "unitText": "GBP (pound sterling) per item"},
+    {"@type": "PropertyValue", "name": "line_revenue_gbp", "unitText": "GBP", "description": "quantity x unit price, rounded to pence"},
+    {"@type": "PropertyValue", "name": "quantity", "unitText": "items"},
+    {"@type": "PropertyValue", "name": "invoice_datetime", "description": "ISO 8601, UK local time"},
+    {"@type": "PropertyValue", "name": "iso3", "description": "ISO 3166-1 alpha-3 country code"},
+    {"@type": "PropertyValue", "name": "dq_status", "description": "trusted / quarantine / cancellation / non_product"},
+    {"@type": "PropertyValue", "name": "recency_days", "unitText": "days"}
+  ],
+  "usageInfo": "See README.md, governance/data_dictionary.md and governance/GOVERNANCE.md (limitations and AI risks)."
+}

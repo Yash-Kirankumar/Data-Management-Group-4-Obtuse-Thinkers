@@ -1,0 +1,57 @@
+2026-11-05 16:06:02  apply_quality_rules: 1033036 rows  {'quarantine': 1033036}
+2026-11-05 16:08:03  apply_quality_rules: 1033036 rows  {'quarantine': 1033036}
+2026-11-05 16:09:51  DEBUG: 1033036 rows  {'dtype': 'str', 'sample': "['2010-09-14T16:25:00Z[UTC]', '2011-05-20T10:32:00Z[UTC]', '2011-11-15T09:26:00Z[UTC]']"}
+2026-11-05 16:10:07  apply_quality_rules: 1033036 rows  {'quarantine': 1033036}
+2026-11-05 16:11:46  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:12:14  rfm_features: 5852 rows  {'Lost': 1509, 'Champions': 1468, 'Needs attention': 1072, 'At risk': 832, 'Loyal': 520, 'New or promising': 451}
+2026-11-05 16:14:25  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:14:51  rfm_features: 5852 rows  {'Lost': 1522, 'Champions': 1466, 'Needs attention': 1081, 'At risk': 819, 'Loyal': 521, 'New or promising': 443}
+2026-11-05 16:16:50  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:17:18  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 16:18:26  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:18:55  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 16:20:13  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:20:40  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 16:21:40  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:22:08  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 16:22:49  apply_quality_rules: 518596 rows  {'trusted': 502322, 'cancellation': 10181, 'quarantine': 3685, 'non_product': 2408}
+2026-11-05 16:23:02  rfm_features: 4285 rows  {'Champions': 1078, 'Lost': 1017, 'Needs attention': 826, 'At risk': 697, 'New or promising': 354, 'Loyal': 313}
+2026-11-05 16:24:04  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:24:32  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 16:25:40  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:26:07  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 16:27:10  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:27:38  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 16:28:20  apply_quality_rules: 518596 rows  {'trusted': 502322, 'cancellation': 10181, 'quarantine': 3685, 'non_product': 2408}
+2026-11-05 16:28:34  rfm_features: 4285 rows  {'Champions': 1078, 'Lost': 1017, 'Needs attention': 826, 'At risk': 697, 'New or promising': 354, 'Loyal': 313}
+2026-11-05 16:31:39  rfm_features: 10 rows  {'Champions': 3, 'Lost': 3, 'Needs attention': 2, 'Loyal': 1, 'At risk': 1}
+2026-11-05 16:31:39  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 16:31:39  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 16:31:44  rfm_features: 10 rows  {'Champions': 4, 'Lost': 3, 'Needs attention': 2, 'At risk': 1}
+2026-11-05 16:31:45  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 16:31:45  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 16:31:48  rfm_features: 10 rows  {'Champions': 4, 'Lost': 3, 'Needs attention': 2, 'At risk': 1}
+2026-11-05 16:31:57  rfm_features: 10 rows  {'Champions': 4, 'Lost': 3, 'Needs attention': 2, 'At risk': 1}
+2026-11-05 16:31:57  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 16:31:57  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 16:33:28  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 16:33:56  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 16:43:31  rfm_features: 10 rows  {'Champions': 4, 'Lost': 3, 'Needs attention': 2, 'At risk': 1}
+2026-11-05 16:43:31  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 16:43:31  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 17:46:15  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 17:46:43  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 18:35:06  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 18:35:33  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 18:40:55  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 18:41:24  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 18:42:33  apply_quality_rules: 1033036 rows  {'trusted': 1003214, 'cancellation': 19103, 'quarantine': 6021, 'non_product': 4698}
+2026-11-05 18:43:01  rfm_features: 5852 rows  {'Lost': 1511, 'Champions': 1464, 'Needs attention': 1084, 'At risk': 830, 'Loyal': 517, 'New or promising': 446}
+2026-11-05 18:43:50  apply_quality_rules: 518596 rows  {'trusted': 502322, 'cancellation': 10181, 'quarantine': 3685, 'non_product': 2408}
+2026-11-05 18:44:04  rfm_features: 4285 rows  {'Champions': 1078, 'Lost': 1017, 'Needs attention': 826, 'At risk': 697, 'New or promising': 354, 'Loyal': 313}
+2026-11-05 18:45:35  rfm_features: 10 rows  {'Champions': 4, 'Lost': 3, 'Needs attention': 2, 'At risk': 1}
+2026-11-05 18:45:35  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 18:45:35  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 19:03:53  rfm_features: 10 rows  {'Champions': 4, 'Lost': 3, 'Needs attention': 2, 'At risk': 1}
+2026-11-05 19:03:53  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}
+2026-11-05 19:03:53  rfm_features: 20 rows  {'Lost': 8, 'Champions': 8, 'Needs attention': 4}

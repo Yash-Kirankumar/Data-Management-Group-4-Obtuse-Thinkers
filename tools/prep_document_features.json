@@ -1,0 +1,130 @@
+[
+ {
+  "id": "node.v2022_4_1.LoadCsv",
+  "featureName": "",
+  "firstSoftwareVersionSupportedIn": {
+   "year": 2023,
+   "quarterOfYear": 1,
+   "versionString": "2023.1.1",
+   "indexOfRelease": 1
+  },
+  "notSupportedMessages": [
+   "en_US::Text Files with Auto-generated Row Numbers (supported in version 2023.1.1 and later)"
+  ],
+  "minimumCompatibleSoftwareVersion": {
+   "year": 2018,
+   "quarterOfYear": 1,
+   "versionString": "2018.1.1",
+   "indexOfRelease": 1
+  }
+ },
+ {
+  "id": "directlyregistered.v2020_1_3.Lod",
+  "featureName": "",
+  "firstSoftwareVersionSupportedIn": {
+   "year": 2020,
+   "quarterOfYear": 1,
+   "versionString": "2020.1.3",
+   "indexOfRelease": 3
+  },
+  "notSupportedMessages": [
+   "en_US::Level of Detail Calculations (supported in version 2020.1.3 and later)"
+  ],
+  "minimumCompatibleSoftwareVersion": null
+ },
+ {
+  "id": "document.v2024_2_0.Flow",
+  "featureName": "",
+  "firstSoftwareVersionSupportedIn": {
+   "year": 2024,
+   "quarterOfYear": 2,
+   "versionString": "2024.2.0",
+   "indexOfRelease": 0
+  },
+  "notSupportedMessages": [
+   "en_US::Connectivity Improvements (supported in version 2024.2.0 and later)"
+  ],
+  "minimumCompatibleSoftwareVersion": {
+   "year": 2023,
+   "quarterOfYear": 2,
+   "versionString": "2023.2.1",
+   "indexOfRelease": 1
+  }
+ },
+ {
+  "id": "node.v2019_3_1.SuperExtensibilityNode",
+  "featureName": "",
+  "firstSoftwareVersionSupportedIn": {
+   "year": 2019,
+   "quarterOfYear": 3,
+   "versionString": "2019.3.1",
+   "indexOfRelease": 1
+  },
+  "notSupportedMessages": [
+   "en_US::Script Steps (supported in version 2019.3.1 and later)"
+  ],
+  "minimumCompatibleSoftwareVersion": {
+   "year": 2019,
+   "quarterOfYear": 3,
+   "versionString": "2019.3.1",
+   "indexOfRelease": 1
+  }
+ },
+ {
+  "id": "node.v2018_2_3.SuperAggregate",
+  "featureName": "",
+  "firstSoftwareVersionSupportedIn": {
+   "year": 2018,
+   "quarterOfYear": 2,
+   "versionString": "2018.2.3",
+   "indexOfRelease": 3
+  },
+  "notSupportedMessages": [
+   "en_US::Actions in Aggregate (supported in version 2018.2.3 and later)"
+  ],
+  "minimumCompatibleSoftwareVersion": {
+   "year": 2018,
+   "quarterOfYear": 2,
+   "versionString": "2018.2.3",
+   "indexOfRelease": 3
+  }
+ },
+ {
+  "id": "node.v2018_2_3.SuperJoin",
+  "featureName": "",
+  "firstSoftwareVersionSupportedIn": {
+   "year": 2018,
+   "quarterOfYear": 2,
+   "versionString": "2018.2.3",
+   "indexOfRelease": 3
+  },
+  "notSupportedMessages": [
+   "en_US::Actions in Join (supported in version 2018.2.3 and later)"
+  ],
+  "minimumCompatibleSoftwareVersion": {
+   "year": 2018,
+   "quarterOfYear": 2,
+   "versionString": "2018.2.3",
+   "indexOfRelease": 3
+  }
+ },
+ {
+  "id": "node.v2018_2_3.SuperUnion",
+  "featureName": "",
+  "firstSoftwareVersionSupportedIn": {
+   "year": 2018,
+   "quarterOfYear": 2,
+   "versionString": "2018.2.3",
+   "indexOfRelease": 3
+  },
+  "notSupportedMessages": [
+   "en_US::Actions in Union (supported in version 2018.2.3 and later)"
+  ],
+  "minimumCompatibleSoftwareVersion": {
+   "year": 2018,
+   "quarterOfYear": 2,
+   "versionString": "2018.2.3",
+   "indexOfRelease": 3
+  }
+ }
+]

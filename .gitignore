@@ -1,0 +1,12 @@
+# raw data: re-download with tools/download_data.py (checksums in data/raw/_download_manifest.json)
+data/raw/*.xlsx
+data/raw/*.txt
+# outputs are rebuilt by running the Tableau Prep flow
+data/output*/
+data/warehouse*/
+prep/*.tflx
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+tabpy_log.log

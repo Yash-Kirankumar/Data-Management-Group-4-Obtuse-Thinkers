@@ -1,0 +1,7 @@
+check,result,evidence
+Invoice + StockCode is a unique key?,no,"88,585 lines share invoice + product"
+FD StockCode -> Description,violated,"1,232 of 4,950 products have more than one description"
+FD Customer ID -> Country,violated,13 customers appear with more than one country
+Overlap between the two sheets,yes,"23,221 identical lines in both sheets (December 2010)"
+Inclusion: Country in reference table (exact name),violated,"EIRE (17,866), Netherlands (5,140), Channel Islands (1,664), Unspecified (756), USA (535), RSA (169), Korea (63), European Community (61), West Indies (54), Czech Republic (30)"
+Reference table: comment lines before the data,yes,50 lines start with '#'

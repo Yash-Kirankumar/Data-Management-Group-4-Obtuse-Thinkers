@@ -1,0 +1,46 @@
+# Data contract for fact_sales - Open Data Contract Standard (ODCS v3) style, simplified.
+# Producer: the Tableau Prep flow prep/online_retail_flow.tfl
+# Consumers: sales dashboard (Tableau), customer model (customer_features)
+apiVersion: v3.0.0
+kind: DataContract
+id: online-retail-fact-sales
+name: fact_sales
+version: 1.0.0
+status: active
+description:
+  purpose: Trusted sales lines of the online shop for revenue reporting and customer analytics.
+  limitations: >
+    22.6% of lines have no customer ID (they count for revenue, not for customer features).
+    Cancellations, postage/fees and lines that broke a rule are in separate tables.
+    Prices are in GBP, not adjusted for inflation or VAT.
+  usage: Aggregate reporting and modelling. Do not try to identify private customers.
+schema:
+  - name: fact_sales
+    physicalName: data/output/fact_sales.csv   # also data/warehouse/fact_sales.hyper
+    properties:
+      - {name: invoice, logicalType: string, required: true, quality: [{rule: pattern, value: '^\d{6}$'}]}
+      - {name: stock_code, logicalType: string, required: true}
+      - {name: description, logicalType: string, required: true}
+      - {name: quantity, logicalType: integer, required: true, quality: [{rule: range, mustBeGreaterThan: 0}]}
+      - {name: unit_price_gbp, logicalType: number, unit: GBP, required: true, quality: [{rule: range, mustBeGreaterThan: 0}]}
+      - {name: line_revenue_gbp, logicalType: number, unit: GBP, required: true}
+      - {name: invoice_datetime, logicalType: timestamp, required: true, quality: [{rule: range, mustBeBetween: ["2009-12-01", "2011-12-31"]}]}
+      - {name: customer_id, logicalType: string, required: false, classification: confidential}
+      - {name: country, logicalType: string, required: false}
+      - {name: iso3, logicalType: string, required: false}
+      - {name: dq_status, logicalType: string, required: true, quality: [{rule: validValues, validValues: [trusted]}]}
+      - {name: source_sheet, logicalType: string, required: true}   # lineage
+      - {name: copies, logicalType: integer, required: true}        # lineage: raw lines behind this row
+quality:
+  - {rule: duplicateCount, mustBe: 0, description: "no identical lines"}
+  - {rule: reconciliation, description: "copies over fact_sales + quarantine + cancellations + non_product = raw rows"}
+team:
+  - {role: owner, name: "Head of Sales - group lead in the project, TO CONFIRM"}
+  - {role: steward, name: "Data analyst - TO CONFIRM"}
+  - {role: custodian, name: "Data engineer - TO CONFIRM"}
+slaProperties:
+  - {property: frequency, value: 1, unit: y, description: "a new yearly sheet is added and the flow re-run"}
+  - {property: latency, value: 7, unit: d}
+changeManagement:
+  breakingChangeNotice: 14 days
+  versioning: semantic

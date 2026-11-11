@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Online Retail II",
+  "description": "All transactions of a UK-based, registered, non-store online retailer (mainly unique all-occasion giftware, many wholesale customers) between 01/12/2009 and 09/12/2011.",
+  "identifier": "https://doi.org/10.24432/C5CG6D",
+  "url": "https://archive.ics.uci.edu/dataset/502/online+retail+ii",
+  "creator": {"@type": "Person", "name": "Daqing Chen"},
+  "publisher": {"@type": "Organization", "name": "UCI Machine Learning Repository"},
+  "datePublished": "2019-09-20",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "Chen, D. (2012). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D",
+  "keywords": "NONE given on the UCI page (only subject area 'Business' and tasks Classification, Regression, Clustering)",
+  "temporalCoverage": "2009-12-01/2011-12-09",
+  "spatialCoverage": "United Kingdom (shop); customers in 43 countries",
+  "distribution": [
+    {"@type": "DataDownload", "name": "online_retail_II.xlsx", "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "contentSize": "45.6 MB", "description": "2 sheets: 'Year 2009-2010' (525,461 rows), 'Year 2010-2011' (541,910 rows), 8 columns each",
+     "sha256": "see data/raw/_download_manifest.json"}
+  ],
+  "variableMeasured_as_documented_by_UCI": [
+    "InvoiceNo - 6-digit number, starts with 'c' for cancellations",
+    "StockCode - 5-digit product code",
+    "Description - product name",
+    "Quantity - quantity per line",
+    "InvoiceDate - date and time",
+    "UnitPrice - price per unit in sterling (GBP)",
+    "CustomerID - 5-digit customer number",
+    "Country - country of residence"
+  ],
+  "knownGaps_found_by_us": [
+    "documentation does not match the file: the file says Invoice, Price, Customer ID (not InvoiceNo, UnitPrice, CustomerID)",
+    "documented '5-digit StockCode' - file also has 85123A, POST, DOT, M, BANK CHARGES ...",
+    "documented '6-digit invoice' - 6 invoices start with A (bad-debt adjustments)",
+    "documented lower-case 'c' - the file uses upper-case C",
+    "the two sheets overlap: December 2010 (23,221 identical lines) is in both, not documented",
+    "unit (GBP) only in the web text, not in the file; country names not standard (EIRE, RSA, USA, 'Unspecified')",
+    "no keywords, no data dictionary file, no provenance of how the export was made"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-11-05",
+  "files": [
+    {
+      "file": "online_retail_II.xlsx",
+      "url": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+      "licence": "CC BY 4.0 - Chen, D. (2012/2019). Online Retail II. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D",
+      "bytes": 45622278,
+      "sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980"
+    },
+    {
+      "file": "countryInfo.txt",
+      "url": "https://download.geonames.org/export/dump/countryInfo.txt",
+      "licence": "CC BY 4.0 - GeoNames (geonames.org)",
+      "bytes": 32112,
+      "sha256": "79f8f59ea01cbb40438bf1856dd6c2ff201f03f8fc72d0530b2646aaf603ef04"
+    }
+  ]
+}

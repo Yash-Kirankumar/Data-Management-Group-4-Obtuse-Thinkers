@@ -1,0 +1,9 @@
+column,type,missing,missing_%,distinct,min / max or top value
+Invoice,object,0,0.0,53628,"top '537434' (1,350)"
+StockCode,object,0,0.0,5305,"top '85123A' (5,829)"
+Description,object,4382,0.41,5698,"top 'WHITE HANGING HEART T-LIGHT HO' (5,918)"
+Quantity,int64,0,0.0,1057,min -80995 / max 80995
+InvoiceDate,datetime64[us],0,0.0,47635,min 2009-12-01 07:45:00 / max 2011-12-09 12:50:00
+Price,float64,0,0.0,2807,min -53594.36 / max 38970.0
+Customer ID,float64,243007,22.77,5942,min 12346.0 / max 18287.0
+Country,str,0,0.0,43,"top 'United Kingdom' (981,330)"

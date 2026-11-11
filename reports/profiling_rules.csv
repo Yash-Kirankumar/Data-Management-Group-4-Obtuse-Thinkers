@@ -1,0 +1,8 @@
+rule,failing rows,passing %
+R1 invoice is 6 digits (optionally C),6,100.0
+R2 description present,4382,99.59
+R3 unit price > 0,6207,99.42
+R4 quantity > 0 on a sale,3457,99.68
+R5 date inside 2009-12-01..2011-12-31,0,100.0
+R6 cancellation has negative quantity,1,100.0
+country is a real country in the reference,2535,99.76
